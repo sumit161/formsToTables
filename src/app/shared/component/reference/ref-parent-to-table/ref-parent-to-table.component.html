@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>sr no</th>
+      <th>fname</th>
+      <th>lname</th>
+      <th>contact</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ele of stdInfo; index as i">
+      <td>{{i+1}}</td>
+      <td>{{ele.fname}}</td>
+      <td>{{ele.lname}}</td>
+      <td>{{ele.contact}}</td>
+      <td>{{ele.email}}</td>
+    </tr>
+  </tbody>
+</table>
