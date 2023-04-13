@@ -1,19 +1,19 @@
 <div class="form-group">
   <label for="">fname</label>
-  <input type="text" #fnamevalue class="form-control" />
+  <input type="text" #fnamevalue class="form-control" required/>
 </div>
 <div class="form-group">
   <label for="">lname</label>
-  <input type="text" #lnamevalue  class="form-control" />
+  <input type="text" #lnamevalue  class="form-control" required/>
 </div>
 <div class="form-group">
   <label for="">contact</label>
-  <input type="text" #contactvalue   class="form-control" />
+  <input type="text" #contactvalue   class="form-control" required/>
 </div>
 <div class="form-group">
   <label for="">email</label>
-  <input type="text" #emailvalue  class="form-control" />
+  <input type="text" #emailvalue  class="form-control" required/>
 </div>
 <div class="text-right">
-<button class="btn btn-danger" (click)="onadd(fnamevalue,lnamevalue,contactvalue,emailvalue)">add</button>
+<button class="btn btn-danger" (click)="onadd1(fnamevalue,lnamevalue,contactvalue,emailvalue)">add</button>
 </div>

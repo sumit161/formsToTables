@@ -7,7 +7,7 @@ import { Ipost, Iproduct, PcatType } from './shared/model/app';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  studentArray: Array<Ipost> = [
+  studentArray1: Array<Ipost> = [
     {
       fname: 'jhon',
       lname: 'doe',
@@ -15,9 +15,33 @@ export class AppComponent {
       email: '@jhon',
     },
   ];
-  ondoller(std: Ipost) {
-    this.studentArray.push(std);
-    console.log(this.studentArray);
+  studentArray2: Array<Ipost> = [
+    {
+      fname: 'lucy',
+      lname: 'ronaldo',
+      contact: '4123',
+      email: '@lucy',
+    },
+  ];
+  studentArray3: Array<Ipost> = [
+    {
+      fname: 'july',
+      lname: 'doe',
+      contact: '1423',
+      email: '@dany',
+    },
+  ];
+  ondoller1(std: Ipost) {
+    this.studentArray1.push(std);
+    console.log(this.studentArray1);
+  }
+  ondoller2(std: Ipost) {
+    this.studentArray2.push(std);
+    console.log(this.studentArray2);
+  }
+  ondoller3(std: Ipost) {
+    this.studentArray3.push(std);
+    console.log(this.studentArray3);
   }
   title = 'tableTaskNgModel';
 

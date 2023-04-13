@@ -8,12 +8,12 @@ import { Ipost } from 'src/app/shared/model/app';
 })
 export class RefParentToTableComponent implements OnInit {
   studentArray!: Array<Ipost>;
-  @Input() stdInfo!:Array<Ipost>
+  @Input() stdInfo1!:Array<Ipost>
   // newStdinfo!: Ipost;
     constructor() { }
 
     ngOnInit(): void {
-      console.log(this.stdInfo)
+      console.log(this.stdInfo1)
     }
 
   }

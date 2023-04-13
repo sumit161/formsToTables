@@ -7,12 +7,12 @@ import { Ipost } from 'src/app/shared/model/app';
   styleUrls: ['./ref-form-to-parent.component.scss']
 })
 export class RefFormToParentComponent implements OnInit {
-  @Output() childtoparent: EventEmitter<Ipost> = new EventEmitter<Ipost>();
+  @Output() createEvent: EventEmitter<Ipost> = new EventEmitter<Ipost>();
   fnameval!: string;
   lnameval!: string;
   contactval!: string;
   emailval!: string;
-  onadd(fname: HTMLInputElement, lname: HTMLInputElement, contact: HTMLInputElement, email: HTMLInputElement) {
+  onadd1(fname: HTMLInputElement, lname: HTMLInputElement, contact: HTMLInputElement, email: HTMLInputElement) {
     console.log(fname, lname, contact, email);
     let obj: Ipost = {
       fname: fname.value,
@@ -21,7 +21,7 @@ export class RefFormToParentComponent implements OnInit {
       email: email.value,
     };
     console.log(obj);
-    this.childtoparent.emit(obj);
+    this.createEvent.emit(obj);
     fname.value = '';
     lname.value = '';
     contact.value = '';

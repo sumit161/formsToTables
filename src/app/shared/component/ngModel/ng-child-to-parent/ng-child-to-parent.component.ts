@@ -24,6 +24,10 @@ export class NgChildToParentComponent implements OnInit {
     };
     console.log(obj);
     this.childtoparent.emit(obj);
+    this.fnameval="";
+    this.lnameval ="";
+    this.contactval="";
+    this.emailval="";
   }
 
   constructor() {}
